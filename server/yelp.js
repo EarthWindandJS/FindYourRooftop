@@ -1,4 +1,6 @@
 var Yelp = require('yelp');
+var dotenv = require('dotenv');
+dotenv.load();
 
 var yelp = new Yelp({
   consumer_key: process.env.yelp_consumer_key,
