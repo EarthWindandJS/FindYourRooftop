@@ -5306,7 +5306,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: white;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -5320,15 +5320,17 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid transparent;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  background-color:white;
 }
 .panel-heading > .dropdown .dropdown-toggle {
+  background-color:white;
   color: inherit;
 }
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
-  color: inherit;
+  background-color: white;
 }
 .panel-title > a,
 .panel-title > small,
