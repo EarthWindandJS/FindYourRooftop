@@ -5,8 +5,8 @@
       <br>
       <form class="form-signin left">
         <div id='fill-out'>Fill out the details</div>
-        <input type="text" id="inputEstName" class="form-control" placeholder="Name of Establishment" ng-model="estName" required autofocus>
-        <input type="text" id="inputCity" class="form-control" placeholder="City" ng-model="estCity" required>
+        <input type="text" id="inputEstName" class="suggestion-form" placeholder="Name of Establishment" ng-model="estName" required autofocus>
+        <input type="text" id="inputCity" class="suggestion-form" placeholder="City" ng-model="estCity" required>
         <button id='search-button' class="btn btn-lg btn-primary btn-block" type="submit" ng-click="findYelpBar(estName, estCity)">Search</button>
       </form>
       <div id='add-suggestion-form'>

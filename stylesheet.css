@@ -13,6 +13,25 @@
   src:url('Gotham-Book.ttf');
 }
 
+body {
+  font-family:Gotham-Book;
+}
+
+.panel-heading {
+  background-color: white
+}
+
+.panel {
+  border-radius:0px;
+  background-color: white;
+  font-family:Gotham-Book;
+}
+
+
+.fyr-heading {
+ background-color: white 
+}
+
 #add-results {
   margin-top: 10px;
   /*width:500px;*/
@@ -41,10 +60,10 @@
 }
 
 .bg {
-  background: url('fyr-banner-2.png') no-repeat center center;
+  background: url('fyr-banner5.png') no-repeat center center;
   position: fixed;
   width: 100%;
-  height: 350px; /*same height as jumbotron */
+  height: 500px; /*same height as jumbotron */
   top:0;
   left:0;
   z-index: -1;
@@ -56,12 +75,15 @@
   width:500px;
 }
 
-.btn:hover {
+.button:hover {
+  transition:.5s;
   background-color:white;
   color:black;
 }
 
-.btn {
+.button {
+  font-size:16px;
+  height:43px;
   border-radius:0px;
   border-style:solid;
   border-color:white;
@@ -73,7 +95,7 @@
 }
 
 .jumbotron {
-  height: 350px;
+  height: 500px;
   width: 100%;
   color: white;
   text-shadow: #444 0 5px 5px;
@@ -87,8 +109,8 @@
 }
 
 .left-buffer {
-  margin-top: 50px;
-  margin-left: 20px;
+  /*margin-top: 50px;*/
+  /*margin-left: 20px;*/
   margin-right: 20px;
 }
 
@@ -96,23 +118,69 @@
   margin: 130px;
 }
 
-/*#div2 {
-  margin-left:20px;
-}*/
+.search-recipe {
+  /*background-color:rgba(0, 0, 0, 0.5);*/
+  /*margin-left:40px;*/
+  top:375px;
+}
+
+#div2 {
+  /*background-color:none;*/
+  /*bottom:70px;*/
+  margin-left:40px;
+}
+
+#div2:focus {
+  outline:none !important;
+}
 
 #zipcode {
+  font-size:16px;
+  color:white;
+  border-left:none;
+  border-right:none;
+  border-top:none;
+  background:none;
   display:inline-block;
-  border-color:black;
+  /*border-color:black;*/
   border-radius:0px;
+  border-bottom:1px white solid;
+}
+
+#zipcode:input {
+  color:white;
+}
+#zipcode:focus {
+  outline:none !important;
+  color:white;
+}
+
+.rated-best {
+  opacity: .8s;
+  /*filter: alpha(opacity=40);*/
+}
+
+.all-rated {
+  margin-left:60px;
 }
 
 #get-to-rooftop {
+  /*padding-top:-40px;*/
+  /*margin-top:40px;*/
+  border-width:2px;
   text-align:center;
   width:180px;
   display:inline-block;
+  color:white;
+  border-style:white;
+  border-color:white;
+}
+
+#get-to-rooftop:hover {
+  background-color:white;
+  border-color:white;
   color:black;
-  border-style:black;
-  border-color:black;
+  transition: 0.5s;
 }
 
 .angular-google-map-container {
@@ -171,13 +239,17 @@
 }
 
 #footer {
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
+    /*background:url('fyr-banner5.png');*/
+    background-color:white;
     height: 60px;
+    /*border-color: #cccccc;*/
+    border-top:1px solid #cccccc;
 }
 .addressFont{
 font-weight: bold;
   font-style: bold;
-  font-family: 'feathericons';
+  font-family: Gotham-Book;
   src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
   src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
     url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
